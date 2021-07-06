@@ -1,0 +1,74 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Menu.gd" type="Script" id=1]
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -128.0
+margin_top = 160.0
+margin_right = 122.0
+margin_bottom = 191.0
+text = "ROBOT ASSEMBLY FACTORY: THE GAME
+(or sth like that idk yet)
+(lofi hiphop edition)"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Start" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -68.0
+margin_top = -10.0
+margin_right = 68.0
+margin_bottom = 10.0
+text = "Assemble"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Info" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -68.0
+margin_top = 20.0
+margin_right = 68.0
+margin_bottom = 40.0
+text = "Fun button"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -288.0
+margin_top = -152.0
+margin_right = 290.0
+margin_bottom = -87.0
+text = "The \"what is this game all bout\" text: 
+It's pretty simple, all you have to do is assemble as many robots as you can in 30 seconds
+There's not a whole lot to this game, 30 seconds already seems like too much
+Btw click that \"Fun button\", it's really cool ngl"
+align = 1
+valign = 1
+
+[connection signal="button_down" from="Start" to="." method="_on_Start_button_down"]
+[connection signal="button_down" from="Info" to="." method="_on_Info_button_down"]
